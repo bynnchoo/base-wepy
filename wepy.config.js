@@ -43,7 +43,8 @@ module.exports = {
   plugins: {
   },
   appConfig: {
-    noPromiseAPI: ['createSelectorQuery']
+    noPromiseAPI: ['createSelectorQuery'],
+    baseUrl: process.env.NODE_ENV==='production' ? 'https://chengbus.com/obus-wechat/':'http://localhost:8888/obus-wechat/'
   }
 }
 
